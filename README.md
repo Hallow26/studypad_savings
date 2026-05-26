@@ -168,4 +168,13 @@ studypad_savings/
 
 MIT © 2025 StudyPad Contributors
 
-## Deployed Contract
+## !!Deployed Contract!! ##
+
+## Contract ID
+CA26YQMCDHPRYPTPDHVW7PORABXUK4DIJCW6M3N5VUXDC5ART3Z2BUPI
+
+## Stellar Link
+https://stellar.expert/explorer/testnet/contract/CA26YQMCDHPRYPTPDHVW7PORABXUK4DIJCW6M3N5VUXDC5ART3Z2BUPI
+
+## Screenshot
+![stellarexpert](image.png)
