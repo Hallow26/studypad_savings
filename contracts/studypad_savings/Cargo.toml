@@ -1,0 +1,32 @@
+[package]
+name = "studypad_savings"
+version = "0.1.0"
+edition = "2021"
+description = "Goal-based USDC savings vault for SEA university students on Stellar"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+soroban-sdk = { version = "21.0.0" }
+
+[dev-dependencies]
+soroban-sdk = { version = "21.0.0", features = ["testutils"] }
+
+[features]
+testutils = ["soroban-sdk/testutils"]
+
+[profile.release]
+# Optimise for small Wasm output size
+opt-level = "z"       # minimise code size
+overflow-checks = true
+debug = false
+strip = "symbols"
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[profile.release-with-logs]
+inherits = "release"
+debug-assertions = true
